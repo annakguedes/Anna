@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --green:#27ae60;
+   --green:#0aaf4f;
    --black:#333;
-   --white:#ffffff;
+   --white:#fff;
    --bg-color:#eee;
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
    --border:.1rem solid var(--black);
@@ -11,9 +11,11 @@
 
 *{
    font-family: 'Poppins', sans-serif;
-   margin:0; padding:0;
+   margin:0;
+   padding:0;
    box-sizing: border-box;
-   outline: none; border:none;
+   outline: none; 
+   border:none;
    text-decoration: none;
    text-transform: capitalize;
 }
@@ -32,7 +34,7 @@ html{
    font-size: 1.7rem;
    padding:1rem 3rem;
    background: var(--green);
-   color:var(rgb(255, 255, 255));
+   color:var(--white);
    text-align: center;
 }
 
@@ -54,6 +56,7 @@ html{
    max-width: 1200px;
    padding:2rem;
    margin:0 auto;
+   background-color: #ffffff;
 }
 
 .admin-product-form-container.centered{
@@ -127,7 +130,6 @@ html{
    background: var(--black);
 }
 
-
 @media (max-width:991px){
 
    html{
@@ -153,5 +155,4 @@ html{
    html{
       font-size: 50%;
    }
-
 }

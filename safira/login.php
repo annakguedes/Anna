@@ -1,20 +1,45 @@
 <?php
 
-  if (isset($_POST['submit'])) {
-
-    // print_r('email: ' . $_POST['email']);
-    // print_r('<br>');
-    // print_r('senha: ' . $_POST['senha']);
-
-    include_once('conexao.php');
-
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    $result = mysqli_query($conexao, "INSERT INTO login(email,senha) 
-      VALUES ('$email','$senha')");
-
-    header('Location: index.html');
-  }
-
+include ('conexao.php');
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="log.php">
+    <link rel="stylesheet" href="topo.php">
+    <title>Safira Essência</title>
+
+    <a href="index.html" class="logo">
+      <img src="logotipo_tcc/logo-1.png" alt=""/>
+    </a>
+  </head>
+
+  <body>
+    
+    <div>
+      <div class="container">
+      <h1>Login</h1>
+        <form action="testLogin.php" method="POST">
+            <input type="text" name="email" placeholder="Email">
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        </form>
+
+          <p class="text">
+            Não respondeu ao formulário?
+            <a href="formulario.php"><u>Clique aqui</u></a>
+          </p>
+        </form>
+ 
+  </body>
+</html>

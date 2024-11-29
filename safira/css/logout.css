@@ -1,0 +1,65 @@
+/* Resetando margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right,rgb(2, 34, 72), rgb(40, 84, 174));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.btn-logout {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #c9302c;
+}
+
+.container{
+    background-color: #04041e;
+    padding: 20px 40px;
+    border-radius: 3px;
+  }
+
+.logo img{
+    height: 12rem;
+  }
+
+.message-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logout-success {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.login-link {
+    font-size: 18px;
+    color: #98e821;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
